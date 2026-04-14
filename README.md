@@ -13,4 +13,7 @@ number of players =11, modules and so on.)
 The example you can find in this sample python program is based on a random generated matrix where rows are resources 
 and columns are the different "dimensions" whose values need to be minimized (or maximized).
 
-The library is a ope source python library.
+The library is a open source python library: from munkres import Munkres
+
+Kind regards Andrea Grianti
+
