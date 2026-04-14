@@ -17,11 +17,12 @@ import numpy as np
 cols=['c0','c1','c2','c3','c4','c5']
 rows=['p0','p1','p2','p3','p4']
 
-#create a toy matrix of integers based on length of cols and rows
+#create a "toy" matrix of integers based on length of cols and rows
 matrix=[list(np.random.randint(1,9,size=len(cols))) for i in range(len(rows))]
 
 #matrix transformation to a profit matrix
-#the following two lines can be deleted to try minimization costs
+#the following two lines can be deleted if the nums above represent costs to be minimized
+#if instead they represent a value to be maximized you can leave these two lines.
 max_value=np.max(matrix)+1 #this value gets the max+1 to be subtracted from the matrix
 p_matrix=[[max_value-num for num in row] for row in matrix]  #in order to have a profit matrix
     
